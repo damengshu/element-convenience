@@ -1,13 +1,13 @@
 ## 简介
 
-heisenberg-element 是基于 element-ui 二次封装的几个常用组件, 可以运行在 vue2.6 vue2.7 的项目中
+element-convenience 是基于 element-ui 二次封装的几个常用组件, 可以运行在 vue2.6 vue2.7 的项目中
 
 ## 安装使用
 
 - 安装
 
 ```bash
-npm install heisenberg-element  or  yarn add heisenberg-element
+npm install element-convenience  or  yarn add element-convenience
 ```
 
 - 导入依赖
@@ -15,10 +15,10 @@ npm install heisenberg-element  or  yarn add heisenberg-element
 ```bash
 // main.js
 
-import HeisenbergElement from 'heisenberg-element'
-import 'heisenberg-element/lib/heisenberg-element.css'
+import ElementConvenience from 'element-convenience'
+import 'element-convenience/lib/element-convenience.css'
 
-Vue.use(HeisenbergElement)
+Vue.use(ElementConvenience)
 ```
 
 ## 使用
@@ -41,7 +41,7 @@ Vue.use(HeisenbergElement)
   </div>
 </template>
 <script setup>
-import { useDialog } from "heisenberg-element";
+import { useDialog } from "element-convenience";
 import { ref } from "vue";
 
 const confirmLoading = ref(false);
@@ -88,7 +88,7 @@ Events
 | register | 注册组件事件,在 setup 中配合`useDialog`使用|
 
 ```js
-import { useDialog } from "heisenberg-element";
+import { useDialog } from "element-convenience";
 const [
   register,
   { setDialogProps, openDialog, closeDialog, setConfirmLoadong },
@@ -124,7 +124,7 @@ useDialogInuseDialogInner
   </div>
 </template>
 <script setup>
-import { useDrawer } from "heisenberg-element";
+import { useDrawer } from "element-convenience";
 
 const [register, { openDrawer, closeDrawer }] = useDrawer();
 
@@ -146,7 +146,7 @@ const confirm = () => {
 </template>
 <script setup>
 import { ref } from "vue";
-import { useForm } from "heisenberg-element";
+import { useForm } from "element-convenience";
 
 const lbForm = ref(null);
 
@@ -210,7 +210,7 @@ const handleRefSubmit = async () => {
   </div>
 </template>
 <script setup>
-import { useTable } from "heisenberg-element";
+import { useTable } from "element-convenience";
 import axios from "axios";
 
 const test = async (params) => {
@@ -281,7 +281,7 @@ const test2 = () => {
   </div>
 </template>
 <script setup>
-import { useDialog } from "heisenberg-element";
+import { useDialog } from "element-convenience";
 import { ref } from "vue";
 
 const confirmLoading = ref(false);
